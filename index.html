@@ -12,16 +12,16 @@ try{var _t=localStorage.getItem("stack-mito-theme");if(_t==="light"||_t==="dark"
 :root{
   --bg0:#06070d; --bg1:#0a0c17;
   --ink:#edf0f9; --muted:#a9b1c9; --faint:#7f88a5;
-  --sky:#FDBA74; --sky-deep:#EA580C;
-  --teal:#EA580C; --teal-deep:#7C2D12;
-  --org:#EA580C; --org-deep:#7C2D12;
-  --amber:#fbbf24; --rose:#fb7185; --cyan:#FDBA74;
+  --sky:#e11d48; --sky-deep:#7e1028;
+  --teal:#2dd4bf; --teal-deep:#19786c;
+  --org:#2dd4bf; --org-deep:#19786c;
+  --amber:#34d399; --rose:#e11d48; --cyan:#e11d48;
   --card:#0d1020; --card2:#12162b;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#FDBA74 5%,#EA580C 50%,#7C2D12 95%);
+  --grad:linear-gradient(100deg,#fb7693 5%,#0ceace 50%,#127c6f 95%);
   --ongrad:#0a0c14;
   --radius:18px;
-  --acc1:#FDBA74;--acc2:#EA580C;--acc3:#7C2D12;
+  --acc1:#fb7693;--acc2:#0ceace;--acc3:#127c6f;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
   --disp:"Avenir Next","Segoe UI",-apple-system,BlinkMacSystemFont,Inter,Roboto,sans-serif;
 }
@@ -31,15 +31,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(234,88,12,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(124,45,18,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(163,61,8,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(251,113,133,0.096), transparent 60%)}
+    radial-gradient(900px 620px at 12% -6%, rgba(12,234,206,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(18,124,111,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(8,163,144,0.192), transparent 62%),
+    radial-gradient(700px 500px at 78% 78%, rgba(251,113,143,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(234,88,12,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(124,45,18,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(163,61,8,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(12,234,206,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(18,124,111,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(8,163,144,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -68,13 +68,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"]{
   --bg0:#e8ebf0; --bg1:#eef1f6;
   --ink:#1b2436; --muted:#4d5871; --faint:#707a93;
-  --sky:#EA580C; --sky-deep:#7C2D12;
-  --teal:#a83f08; --teal-deep:#873306;
-  --org:#EA580C; --org-deep:#7C2D12;
-  --amber:#b45309; --rose:#e11d48; --cyan:#873306;
+  --sky:#8c0d29; --sky-deep:#25030b;
+  --teal:#168577; --teal-deep:#062521;
+  --org:#8c0d29; --org-deep:#25030b;
+  --amber:#188960; --rose:#8c0d29; --cyan:#168577;
   --card:#f8fafc; --card2:#e9edf3;
   --line:rgba(15,23,42,.14);
-  --grad:linear-gradient(100deg,#EA580C,#7C2D12,#EA580C);
+  --grad:linear-gradient(100deg,#ea0c3d,#7c122b,#ea0c3d);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -85,7 +85,7 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"] #dots{opacity:.55}
 [data-theme="light"] .bg-grad{opacity:.55}
 nav.chapters{position:sticky;top:0;z-index:50;background:rgba(6,7,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-nav.chapters .rail{max-width:1080px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
+nav.chapters .rail{max-width:1280px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
 nav.chapters .rail::-webkit-scrollbar{display:none}
 nav.chapters a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-size:.82rem;font-weight:600;
   letter-spacing:.04em;padding:.42rem .8rem;border:1px solid var(--line);border-radius:999px;white-space:nowrap;transition:all .25s ease}
@@ -120,7 +120,7 @@ nav.chapters a.active{color:#0a0c14;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.25rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
@@ -130,12 +130,12 @@ h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;le
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:1280px;margin:0 auto}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
-.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(251,191,36,.6);animation:pulse 2.2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(251,191,36,.55)}70%{box-shadow:0 0 0 12px rgba(251,191,36,0)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
+.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(38,249,172,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(38,249,172,.55)}70%{box-shadow:0 0 0 12px rgba(38,249,172,0)}100%{box-shadow:0 0 0 0 rgba(38,249,172,0)}}
 .hero h1{font-family:var(--disp);font-weight:900;letter-spacing:-.03em;line-height:1.02;font-size:clamp(2.4rem,7.5vw,4.8rem);margin-bottom:1.1rem}
 .hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
   background-size:200% auto;animation:sheen 9s ease-in-out infinite}
@@ -154,6 +154,8 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
   -webkit-background-clip:text;background-clip:text;color:transparent}
 .stat .lbl{font-size:.8rem;color:var(--faint);letter-spacing:.06em;text-transform:uppercase;font-weight:600}
 .scroll-hint{margin-top:3rem;color:var(--faint);font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;animation:bob 2.6s ease-in-out infinite}
+.rate-h{font-family:var(--disp);font-size:1.6rem;font-weight:800;text-align:center;margin:2.6rem 0 .2rem;letter-spacing:-.01em}
+.rate-h .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 @keyframes bob{0%,100%{transform:translateY(0);opacity:.7}50%{transform:translateY(8px);opacity:1}}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.5rem}
 .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.2rem;margin-bottom:1.5rem}
@@ -188,11 +190,11 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
 .kv .k.s{background:rgba(124,199,255,.12);color:var(--sky);border:1px solid rgba(124,199,255,.35)}
 .kv .k.t{background:rgba(94,234,212,.10);color:var(--teal);border:1px solid rgba(94,234,212,.35)}
-.kv .k.o{background:rgba(251,146,60,.12);color:var(--org);border:1px solid rgba(251,146,60,.35)}
-.kv .k.a{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.35)}
-.kv .k.g{background:rgba(251,113,133,.12);color:var(--rose);border:1px solid rgba(251,113,133,.35)}
+.kv .k.o{background:rgba(250,61,102,.12);color:var(--org);border:1px solid rgba(250,61,102,.35)}
+.kv .k.a{background:rgba(38,249,172,.12);color:var(--amber);border:1px solid rgba(38,249,172,.35)}
+.kv .k.g{background:rgba(251,113,143,.12);color:var(--rose);border:1px solid rgba(251,113,143,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(234,88,12,.10),transparent 70%),#090b15;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(12,234,206,.10),transparent 70%),#090b15;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -209,14 +211,14 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ebar .row .v{font-size:.88rem;color:var(--faint);font-variant-numeric:tabular-nums}
 .ebar .track{height:14px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
 .ebar .fill{height:100%;width:0;border-radius:999px;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
-.in .ebar .fill{width:var(--w)}
+.ebar.in .fill{width:var(--w)}
 .ebar .note{font-size:.85rem;color:var(--faint);margin-top:.45rem}
 .anec-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 @media(max-width:720px){.anec-grid{grid-template-columns:1fr}}
 .anec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative;overflow:hidden}
 .anec::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .anec .stamp{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;
-  color:var(--amber);border:1px solid rgba(251,191,36,.4);background:rgba(251,191,36,.08);
+  color:var(--amber);border:1px solid rgba(38,249,172,.4);background:rgba(38,249,172,.08);
   padding:.28rem .6rem;border-radius:7px;text-transform:uppercase;margin-bottom:.65rem}
 .anec h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .anec-head{display:flex;align-items:center;gap:.85rem;margin-bottom:.55rem}
@@ -232,7 +234,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .anec p{color:var(--muted);font-size:.95rem}
 .anec p strong{color:var(--ink)}
 .anec .caveat{margin-top:.8rem;font-size:.82rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:.7rem}
-.folk-note{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.3);border-radius:var(--radius);
+.folk-note{background:rgba(38,249,172,.06);border:1px solid rgba(38,249,172,.3);border-radius:var(--radius);
   padding:1.2rem 1.4rem;margin-bottom:1.6rem;color:var(--muted);font-size:.98rem}
 .folk-note strong{color:var(--amber)}
 .safety-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
@@ -243,9 +245,14 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
-.lvl-known .level{background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
-.lvl-theory .level{background:rgba(251,146,60,.1);color:var(--org);border:1px solid rgba(251,146,60,.4)}
-.lvl-unknown .level{background:rgba(251,113,133,.1);color:var(--rose);border:1px solid rgba(251,113,133,.4)}
+.lvl-known .level{background:rgba(38,249,172,.1);color:var(--amber);border:1px solid rgba(38,249,172,.4)}
+.lvl-theory .level{background:rgba(250,61,102,.1);color:var(--org);border:1px solid rgba(250,61,102,.4)}
+.lvl-unknown .level{background:rgba(251,113,143,.1);color:var(--rose);border:1px solid rgba(251,113,143,.4)}
+.tbadge{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  padding:.3rem .65rem;border-radius:7px;margin-bottom:.7rem;border:1px solid}
+.tbadge.b1{background:rgba(38,249,172,.1);color:var(--amber);border-color:rgba(38,249,172,.4)}
+.tbadge.b2{background:rgba(250,61,102,.1);color:var(--org);border-color:rgba(250,61,102,.4)}
+.tbadge.b3{background:rgba(251,113,143,.1);color:var(--rose);border-color:rgba(251,113,143,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -266,10 +273,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -282,7 +288,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(251,113,133,.05);border:1px solid rgba(251,113,133,.3);border-radius:var(--radius);
+.limits{background:rgba(251,113,143,.05);border:1px solid rgba(251,113,143,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -323,7 +329,7 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none}
-  .in .ebar .fill{transition:none}
+  .ebar.in .fill{transition:none}
 }
 
 /* --- ambient motion additions: subtle, additive, non-intrusive --- */
@@ -349,7 +355,7 @@ mini-poll { display: block; }
   border-radius: 18px;
   background:
     linear-gradient(var(--card, #0d1020), var(--card, #0d1020)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #fdba74), var(--mpc2, #a3e635)) border-box;
+    linear-gradient(135deg, var(--mpc1, #fb7693), var(--mpc2, #a3e635)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -361,11 +367,11 @@ mini-poll { display: block; }
   color: var(--muted, #a9b1c9); font-size: .88rem;
 }
 .mpoll-teaser:hover { background: rgba(255,255,255,.03); }
-.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: -2px; }
+.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #26f9ac); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #fdba74);
-  box-shadow: 0 0 10px var(--mpc1, #fdba74);
+  background: var(--mpc1, #fb7693);
+  box-shadow: 0 0 10px var(--mpc1, #fb7693);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -399,7 +405,7 @@ mini-poll { display: block; }
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
   border-radius: 999px; font-size: .82rem; font-weight: 700; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
+  background: linear-gradient(100deg, var(--acc1, #fb7693), var(--acc2, #a3e635), var(--acc3, #fa3d66));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
@@ -420,23 +426,23 @@ mini-poll { display: block; }
   background: rgba(255,255,255,.03); color: var(--ink, #edf0f9);
   font-size: .95rem; transition: border-color .15s, background .15s, transform .15s;
 }
-.mpoll-opt:hover { border-color: var(--amber, #fbbf24); background: rgba(255,255,255,.05); }
-.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: 2px; }
-.mpoll-opt.sel { border-color: var(--amber, #fbbf24); background: rgba(251,191,36,.10); }
+.mpoll-opt:hover { border-color: var(--amber, #26f9ac); background: rgba(255,255,255,.05); }
+.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #26f9ac); outline-offset: 2px; }
+.mpoll-opt.sel { border-color: var(--amber, #26f9ac); background: rgba(38,249,172,.10); }
 .mpoll-emoji { font-size: 1.25rem; flex: 0 0 auto; }
 .mpoll-label { flex: 1; }
 .mpoll-vote, .mpoll-again {
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
   font-size: 1rem; font-weight: 800; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635));
+  background: linear-gradient(100deg, var(--acc1, #fb7693), var(--acc2, #a3e635));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
 .mpoll-vote:disabled { opacity: .45; cursor: not-allowed; transform: none; }
 .mpoll-note {
-  margin-top: .7rem; font-size: .88rem; color: #fbbf24;
-  border: 1px dashed rgba(251,191,36,.4); border-radius: 10px; padding: .6rem .8rem;
+  margin-top: .7rem; font-size: .88rem; color: #26f9ac;
+  border: 1px dashed rgba(38,249,172,.4); border-radius: 10px; padding: .6rem .8rem;
 }
 .mpoll-bars { display: grid; gap: .6rem; margin-top: .4rem; }
 .mpoll-rowtop {
@@ -444,17 +450,17 @@ mini-poll { display: block; }
   font-size: .9rem; color: var(--ink, #edf0f9); margin-bottom: .28rem;
 }
 .mpoll-pct { font-weight: 800; color: var(--muted, #a9b1c9); flex: 0 0 auto; }
-.mpoll-mine { color: var(--amber, #fbbf24); font-weight: 700; font-size: .8rem; }
+.mpoll-mine { color: var(--amber, #26f9ac); font-weight: 700; font-size: .8rem; }
 .mpoll-track {
   height: 10px; border-radius: 999px; overflow: hidden;
   background: rgba(255,255,255,.07);
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
+  background: linear-gradient(90deg, var(--acc1, #fb7693), var(--acc2, #a3e635), var(--acc3, #fa3d66));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
-.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(251,191,36,.45); }
+.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(38,249,172,.45); }
 .mpoll-total {
   margin-top: .8rem; font-size: .85rem; color: var(--faint, #7f88a5);
 }
@@ -489,7 +495,7 @@ mini-poll { display: block; }
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FDBA74"/><stop offset="50%" stop-color="#EA580C"/><stop offset="100%" stop-color="#7C2D12"/>
+      <stop offset="0%" stop-color="#fb7693"/><stop offset="50%" stop-color="#0ceace"/><stop offset="100%" stop-color="#127c6f"/>
     </linearGradient>
   </defs>
 </svg>
@@ -514,15 +520,18 @@ mini-poll { display: block; }
   <a href="#ch2"><span class="n">02</span>Why Forums Pair Them</a>
   <a href="#ch3"><span class="n">03</span>Combined Mechanism</a>
   <a href="#ch4"><span class="n">04</span>Combined Evidence</a>
-  <a href="#ch5"><span class="n">05</span>What People Say</a>
-  <a href="#ch6"><span class="n">06</span>Combined Risks</a>
-  <a href="#ch7"><span class="n">07</span>Glossary</a>
-  <a href="#ch8"><span class="n">08</span>Takeaways</a>
+  <a href="#ch5"><span class="n">05</span>Community Reports</a>
+  <a href="#ch6"><span class="n">06</span>MOTS-C vs SS-31</a>
+  <a href="#ch7"><span class="n">07</span>Potential Benefits</a>
+  <a href="#ch8"><span class="n">08</span>Who It May Suit</a>
+  <a href="#ch9"><span class="n">09</span>Combined Risks</a>
+  <a href="#ch10"><span class="n">10</span>Understanding mito-stack Terminology</a>
+  <a href="#ch11"><span class="n">11</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
 <nav class="chapters" aria-label="Chapters"><div class="rail" id="rail">
-  <a href="#ch1">01 · The Pair</a><a href="#ch2">02 · Why Paired</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Reports</a><a href="#ch6">06 · Risks</a><a href="#ch7">07 · Glossary</a><a href="#ch8">08 · Takeaways</a>
+  <a href="#ch1">01 · The Pair</a><a href="#ch2">02 · Why Paired</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Reports</a><a href="#ch6">06 · MOTS-C vs SS-31</a><a href="#ch7">07 · Benefits</a><a href="#ch8">08 · Who It May Suit</a><a href="#ch9">09 · Risks</a><a href="#ch10">10 · Understanding mito-stack Terminology</a><a href="#ch11">11 · Takeaways</a>
 </div></nav>
 
 <header class="hero">
@@ -540,7 +549,7 @@ mini-poll { display: block; }
     <div class="stat"><div class="num" data-count="0">0</div><div class="lbl">clinical trials of the combination</div></div>
     <div class="stat"><div class="num" data-count="2">0</div><div class="lbl">different mitochondrial jobs in one stack</div></div>
   </div>
-  <div class="scrollcue" aria-hidden="true">scroll ↓</div>
+  <div class="scroll-hint" aria-hidden="true">scroll ↓</div>
 </header>
 
 <main class="wrap">
@@ -566,7 +575,7 @@ mini-poll { display: block; }
   <span class="eyebrow"><span class="n">02</span>Why forums pair them</span>
   <h2>Why the internet <span class="hl">ships this couple</span></h2>
   <p class="lede">Nobody ran a trial and discovered synergy. The pairing was born in <strong>forum logic</strong>: two mitochondrial peptides, non-overlapping mechanisms, therefore complementary. Here's how the story built itself.</p>
-<div class="diagram reveal"><svg viewBox="0 0 640 196" role="img" aria-label="Timeline"><line x1="40" y1="110" x2="600" y2="110" stroke="#3a4160" stroke-width="3" class="flowseq"/><circle cx="70" cy="110" r="26" fill="none" stroke="#FDBA74" stroke-width="2" class="ringp"/><circle cx="70" cy="110" r="13" fill="#FDBA74"/><text x="70" y="60" fill="#FDBA74" font-size="13" font-weight="800" text-anchor="middle">2015</text><text x="70" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">MOTS-C paper</text><text x="70" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Landmark mouse study: metabolic benefits via AMPK</text><circle cx="195" cy="110" r="26" fill="none" stroke="#EA580C" stroke-width="2" class="ringp"/><circle cx="195" cy="110" r="13" fill="#EA580C"/><text x="195" y="60" fill="#EA580C" font-size="13" font-weight="800" text-anchor="middle">2017+</text><text x="195" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Forum discovery</text><text x="195" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Biohacker threads start naming MOTS-C a longevity candidate</text><circle cx="320" cy="110" r="26" fill="none" stroke="#7C2D12" stroke-width="2" class="ringp"/><circle cx="320" cy="110" r="13" fill="#7C2D12"/><text x="320" y="60" fill="#7C2D12" font-size="13" font-weight="800" text-anchor="middle">2020s</text><text x="320" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">The pairing</text><text x="320" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">'Mito stack' posts combine it with SS-31 for full coverage</text><circle cx="445" cy="110" r="26" fill="none" stroke="#EA580C" stroke-width="2" class="ringp"/><circle cx="445" cy="110" r="13" fill="#EA580C"/><text x="445" y="60" fill="#EA580C" font-size="13" font-weight="800" text-anchor="middle">2025</text><text x="445" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">SS-31 approved</text><text x="445" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Barth approval gives the stack a borrowed halo of legitimacy</text><circle cx="570" cy="110" r="26" fill="none" stroke="#FDBA74" stroke-width="2" class="ringp"/><circle cx="570" cy="110" r="13" fill="#FDBA74"/><text x="570" y="60" fill="#FDBA74" font-size="13" font-weight="800" text-anchor="middle">Now</text><text x="570" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Clinic menus</text><text x="570" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Longevity clinics list the combo; trials: still zero</text></svg><div class="cap">A forum-born pairing: logic first, evidence never.</div></div>
+<div class="diagram reveal"><svg viewBox="0 0 640 196" role="img" aria-label="Timeline"><line x1="40" y1="110" x2="600" y2="110" stroke="#3a4160" stroke-width="3" class="flowseq"/><circle cx="70" cy="110" r="26" fill="none" stroke="#fb7693" stroke-width="2" class="ringp"/><circle cx="70" cy="110" r="13" fill="#fb7693"/><text x="70" y="60" fill="#fb7693" font-size="13" font-weight="800" text-anchor="middle">2015</text><text x="70" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">MOTS-C paper</text><text x="8" y="178" fill="#7f88a5" font-size="10.5" text-anchor="start">Landmark mouse study: metabolic benefits</text><circle cx="195" cy="110" r="26" fill="none" stroke="#0ceace" stroke-width="2" class="ringp"/><circle cx="195" cy="110" r="13" fill="#0ceace"/><text x="195" y="60" fill="#0ceace" font-size="13" font-weight="800" text-anchor="middle">2017+</text><text x="195" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Forum discovery</text><text x="195" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Biohacker threads start naming MOTS-C a longevity candidate</text><circle cx="320" cy="110" r="26" fill="none" stroke="#127c6f" stroke-width="2" class="ringp"/><circle cx="320" cy="110" r="13" fill="#127c6f"/><text x="320" y="60" fill="#127c6f" font-size="13" font-weight="800" text-anchor="middle">2020s</text><text x="320" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">The pairing</text><text x="320" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">'Mito stack' posts combine it with SS-31 for full coverage</text><circle cx="445" cy="110" r="26" fill="none" stroke="#0ceace" stroke-width="2" class="ringp"/><circle cx="445" cy="110" r="13" fill="#0ceace"/><text x="445" y="60" fill="#0ceace" font-size="13" font-weight="800" text-anchor="middle">2025</text><text x="445" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">SS-31 approved</text><text x="445" y="178" fill="#7f88a5" font-size="10.5" text-anchor="middle">Barth approval gives the stack a borrowed halo of legitimacy</text><circle cx="570" cy="110" r="26" fill="none" stroke="#fb7693" stroke-width="2" class="ringp"/><circle cx="570" cy="110" r="13" fill="#fb7693"/><text x="570" y="60" fill="#fb7693" font-size="13" font-weight="800" text-anchor="middle">Now</text><text x="570" y="160" fill="#a9b1c9" font-size="11.5" font-weight="700" text-anchor="middle">Clinic menus</text><text x="632" y="178" fill="#7f88a5" font-size="10.5" text-anchor="end">Longevity clinics list the combo; trials: still zero</text></svg><div class="cap">A forum-born pairing: logic first, evidence never.</div></div>
 <div class="kv reveal"><span class="k s">Non-overlapping mechanisms</span><p>The core pitch: MOTS-C works through <strong>AMPK signaling</strong>, SS-31 through <strong>membrane cardiolipin</strong>. Different pathways, so — the argument goes — they can't be redundant.</p></div>
 <div class="kv reveal"><span class="k t">The 'exercise in a bottle' halo</span><p>Exercise raises natural MOTS-C levels in humans. Forums fold that into the stack's story as if <strong>injecting the peptide equals exercising</strong> — it doesn't, and no data says it does.</p></div>
 <div class="kv reveal"><span class="k o">Borrowed legitimacy</span><p>SS-31's real 2025 approval gets cited as proof the <strong>whole stack</strong> is legitimate — a halo effect. An approval for Barth syndrome says nothing about MOTS-C or about combining them.</p></div>
@@ -581,13 +590,94 @@ mini-poll { display: block; }
   <span class="eyebrow"><span class="n">03</span>Combined mechanism</span>
   <h2>The proposed <span class="hl">one-two punch</span></h2>
   <p class="lede">If you steelman the stack — the strongest possible version of the argument — it looks like this. Every arrow is a hypothesis, and the <strong>combination arrows are pure speculation</strong>.</p>
-<div class="diagram reveal"><svg viewBox="0 0 640 196" role="img" aria-label="Four-step mechanism diagram"><g font-size="13" font-weight="800" text-anchor="middle"><rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#FDBA74" stroke-width="2"/><text x="84" y="105" fill="#FDBA74">1 · SIGNAL</text><text x="84" y="130" fill="#a9b1c9" font-size="11" font-weight="600">MOTS-C activates</text><text x="84" y="146" fill="#a9b1c9" font-size="11" font-weight="600">AMPK energy switch</text><rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#EA580C" stroke-width="2"/><text x="236" y="105" fill="#EA580C">2 · ADAPT</text><text x="236" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Cells reprogram</text><text x="236" y="146" fill="#a9b1c9" font-size="11" font-weight="600">burn fat, spare glucose</text><rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#FDBA74" stroke-width="2"/><text x="388" y="105" fill="#FDBA74">3 · STEADY</text><text x="388" y="130" fill="#a9b1c9" font-size="11" font-weight="600">SS-31 braces</text><text x="388" y="146" fill="#a9b1c9" font-size="11" font-weight="600">mitochondrial membrane</text><rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#EA580C" stroke-width="2"/><text x="540" y="105" fill="#EA580C">4 · OUTPUT</text><text x="540" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Cleaner power</text><text x="540" y="146" fill="#a9b1c9" font-size="11" font-weight="600">claimed — never measured</text></g><g stroke="#7f88a5" stroke-width="2" fill="none" class="flow" stroke-dasharray="6 6"><path d="M148 120 h24"/><path d="M300 120 h24"/><path d="M452 120 h24"/></g></svg><div class="cap">Steelman chain: signal → adapt → steady → output. The combo step has no data at all.</div></div>
-<div class="ebar"><div class="row"><span class="t">MOTS-C metabolic effects (mice)</span><span class="v">real, preclinical</span></div><div class="track"><div class="fill" style="--w:60%;background:linear-gradient(90deg,#EA580C,#FDBA74)"></div></div><div class="note">Improved insulin sensitivity and less obesity in mice. No human efficacy trials published.</div></div>
-<div class="ebar"><div class="row"><span class="t">SS-31 membrane effects (humans, Barth)</span><span class="v">narrow win</span></div><div class="track"><div class="fill" style="--w:45%;background:linear-gradient(90deg,#EA580C,#FDBA74)"></div></div><div class="note">Real functional gains in Barth syndrome; failed in heart failure, heart attack, myopathy.</div></div>
-<div class="ebar"><div class="row"><span class="t">Additive or synergistic effect</span><span class="v">pure speculation</span></div><div class="track"><div class="fill" style="--w:5%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">No animal study, no human study, no mechanistic paper on the combination exists.</div></div>
-<div class="ebar"><div class="row"><span class="t">'Exercise mimetic' framing</span><span class="v">marketing</span></div><div class="track"><div class="fill" style="--w:8%;background:linear-gradient(90deg,#7C2D12,#EA580C)"></div></div><div class="note">Exercise does raise MOTS-C — but exercise does a thousand other things too.</div></div>
+<div class="diagram reveal"><svg viewBox="0 0 640 196" role="img" aria-label="Four-step mechanism diagram"><g font-size="13" font-weight="800" text-anchor="middle"><rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fb7693" stroke-width="2"/><text x="84" y="105" fill="#fb7693">1 · SIGNAL</text><text x="84" y="130" fill="#a9b1c9" font-size="11" font-weight="600">MOTS-C activates</text><text x="84" y="146" fill="#a9b1c9" font-size="11" font-weight="600">AMPK energy switch</text><rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#0ceace" stroke-width="2"/><text x="236" y="105" fill="#0ceace">2 · ADAPT</text><text x="236" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Cells reprogram</text><text x="236" y="146" fill="#a9b1c9" font-size="11" font-weight="600">burn fat, spare glucose</text><rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fb7693" stroke-width="2"/><text x="388" y="105" fill="#fb7693">3 · STEADY</text><text x="388" y="130" fill="#a9b1c9" font-size="11" font-weight="600">SS-31 braces</text><text x="388" y="146" fill="#a9b1c9" font-size="11" font-weight="600">mitochondrial membrane</text><rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#0ceace" stroke-width="2"/><text x="540" y="105" fill="#0ceace">4 · OUTPUT</text><text x="540" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Cleaner power</text><text x="540" y="146" fill="#a9b1c9" font-size="11" font-weight="600">claimed — never measured</text></g><g stroke="#7f88a5" stroke-width="2" fill="none" class="flow" stroke-dasharray="6 6"><path d="M148 120 h24"/><path d="M300 120 h24"/><path d="M452 120 h24"/></g></svg><div class="cap">Steelman chain: signal → adapt → steady → output. The combo step has no data at all.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">MOTS-C metabolic effects (mice)</span><span class="v">real, preclinical</span></div><div class="track"><div class="fill" style="--w:60%;background:linear-gradient(90deg,#0ceace,#fb7693)"></div></div><div class="note">Improved insulin sensitivity and less obesity in mice. No human efficacy trials published.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">SS-31 membrane effects (humans, Barth)</span><span class="v">narrow win</span></div><div class="track"><div class="fill" style="--w:45%;background:linear-gradient(90deg,#0ceace,#fb7693)"></div></div><div class="note">Real functional gains in Barth syndrome; failed in heart failure, heart attack, myopathy.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Additive or synergistic effect</span><span class="v">pure speculation</span></div><div class="track"><div class="fill" style="--w:5%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">No animal study, no human study, no mechanistic paper on the combination exists.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">'Exercise mimetic' framing</span><span class="v">marketing</span></div><div class="track"><div class="fill" style="--w:8%;background:linear-gradient(90deg,#127c6f,#0ceace)"></div></div><div class="note">Exercise does raise MOTS-C — but exercise does a thousand other things too.</div></div>
 <div class="plain reveal"><div class="plabel">Plain English</div><p>The steelman: <strong>coach plus mechanic</strong> — one reprograms the metabolism, the other maintains the hardware. The problem with steelmanning a stack nobody tested: you're polishing an argument, not describing evidence.</p></div>
-</section>
+<div class="diagram reveal"><svg viewBox="0 0 640 360" role="img" aria-label="Detailed mitochondrion cross-section">
+<rect x="40" y="40" width="560" height="280" rx="120" fill="#10152e" stroke="#fb7693" stroke-width="3"/>
+<rect x="75" y="75" width="490" height="210" rx="95" fill="none" stroke="#0ceace" stroke-width="3"/>
+<text x="90" y="32" fill="#fb7693" font-size="12" font-weight="800">OUTER MEMBRANE</text>
+<text x="430" y="30" fill="#f4728f" font-size="10.5" font-weight="700">PROTON GRADIENT</text>
+<path id="hpath" d="M120 50 H520" fill="none" stroke="none"/>
+<circle r="5" fill="#f4728f"><animateMotion dur="4s" repeatCount="indefinite" begin="0s"><mpath href="#hpath"/></animateMotion></circle>
+<circle r="5" fill="#f4728f"><animateMotion dur="4s" repeatCount="indefinite" begin="-1.33s"><mpath href="#hpath"/></animateMotion></circle>
+<circle r="5" fill="#f4728f"><animateMotion dur="4s" repeatCount="indefinite" begin="-2.66s"><mpath href="#hpath"/></animateMotion></circle>
+<text x="300" y="312" fill="#7f88a5" font-size="10.5" font-weight="700" text-anchor="middle">INTERMEMBRANE SPACE</text>
+<text x="470" y="312" fill="#0ceace" font-size="10.5" font-weight="700">INNER MEMBRANE</text>
+<text x="95" y="66" fill="#26f9ac" font-size="10.5" font-weight="700">CARDIOLIPIN</text>
+<g class="glow-pulse" fill="#26f9ac">
+<rect x="135" y="70" width="10" height="10" transform="rotate(45 140 75)"/>
+<rect x="255" y="70" width="10" height="10" transform="rotate(45 260 75)"/>
+<rect x="375" y="70" width="10" height="10" transform="rotate(45 380 75)"/>
+<rect x="495" y="70" width="10" height="10" transform="rotate(45 500 75)"/>
+</g>
+<path d="M190 75 v55 q0 20 20 20 q20 0 20 -20 v-55" fill="none" stroke="#0ceace" stroke-width="3"/>
+<path d="M310 75 v55 q0 20 20 20 q20 0 20 -20 v-55" fill="none" stroke="#0ceace" stroke-width="3"/>
+<path d="M430 75 v55 q0 20 20 20 q20 0 20 -20 v-55" fill="none" stroke="#0ceace" stroke-width="3"/>
+<text x="95" y="122" fill="#7f88a5" font-size="11" font-weight="700">MATRIX</text>
+<g><rect x="140" y="240" width="44" height="26" rx="8" fill="#1b2140" stroke="#fb7693" stroke-width="1.5"/><text x="162" y="258" fill="#fb7693" font-size="11" font-weight="800" text-anchor="middle">I</text></g>
+<g><rect x="225" y="240" width="44" height="26" rx="8" fill="#1b2140" stroke="#fb7693" stroke-width="1.5"/><text x="247" y="258" fill="#fb7693" font-size="11" font-weight="800" text-anchor="middle">II</text></g>
+<g><rect x="310" y="240" width="44" height="26" rx="8" fill="#1b2140" stroke="#fb7693" stroke-width="1.5"/><text x="332" y="258" fill="#fb7693" font-size="11" font-weight="800" text-anchor="middle">III</text></g>
+<g><rect x="395" y="240" width="44" height="26" rx="8" fill="#1b2140" stroke="#fb7693" stroke-width="1.5"/><text x="417" y="258" fill="#fb7693" font-size="11" font-weight="800" text-anchor="middle">IV</text></g>
+<text x="285" y="292" fill="#a9b1c9" font-size="10.5" font-weight="700" text-anchor="middle">ELECTRON TRANSPORT CHAIN</text>
+<ellipse cx="488" cy="195" rx="16" ry="12" fill="#1b2140" stroke="#fb7693" stroke-width="2"/>
+<line x1="488" y1="207" x2="488" y2="233" stroke="#fb7693" stroke-width="3"/>
+<rect x="472" y="233" width="32" height="12" rx="4" fill="#1b2140" stroke="#fb7693" stroke-width="1.5"/>
+<text x="488" y="262" fill="#fb7693" font-size="10.5" font-weight="700" text-anchor="middle">ATP SYNTHASE</text>
+<path id="hpath2" d="M488 180 L488 248" fill="none" stroke="none"/>
+<circle r="4" fill="#f4728f"><animateMotion dur="3s" repeatCount="indefinite" begin="0s"><mpath href="#hpath2"/></animateMotion></circle>
+<circle r="4" fill="#f4728f"><animateMotion dur="3s" repeatCount="indefinite" begin="-1.5s"><mpath href="#hpath2"/></animateMotion></circle>
+<circle cx="526" cy="195" r="6" fill="#a3e635" opacity="0.85"/>
+<text x="536" y="199" fill="#a3e635" font-size="10.5" font-weight="700">ATP</text>
+<g class="float-slow" fill="#fb7693" stroke="#127c6f" stroke-width="2">
+<circle cx="190" cy="140" r="7"/><circle cx="214" cy="152" r="7"/><circle cx="240" cy="138" r="7"/><circle cx="226" cy="168" r="7"/>
+</g>
+<text x="216" y="200" fill="#fb7693" font-size="12" font-weight="800" text-anchor="middle">SS-31</text>
+<path d="M200 128 L150 82" fill="none" stroke="#26f9ac" stroke-width="2" class="flowseq"/>
+<path d="M232 128 L252 82" fill="none" stroke="#26f9ac" stroke-width="2" class="flowseq"/>
+</svg><div class="cap">The power plant, dissected: outer membrane → intermembrane space → inner membrane with cristae, electron transport chain and ATP synthase. SS-31 is <strong>proposed</strong> to sit at cardiolipin in the inner membrane. Proton flow through ATP synthase is the real engine — nothing shown touches DNA.</div></div><div class="diagram reveal"><svg viewBox="0 0 640 240" role="img" aria-label="MOTS-C AMPK signaling pathway">
+<rect x="400" y="8" width="190" height="26" rx="13" fill="none" stroke="#26f9ac" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="495" y="25" fill="#26f9ac" font-size="10.5" font-weight="800" text-anchor="middle">PROPOSED MECHANISM</text>
+<rect x="20" y="90" width="110" height="70" rx="12" fill="#151b36" stroke="#fb7693" stroke-width="2"/>
+<text x="75" y="118" fill="#fb7693" font-size="13" font-weight="800" text-anchor="middle">MOTS-C</text>
+<text x="75" y="140" fill="#a9b1c9" font-size="10.5" font-weight="600" text-anchor="middle">mito-DNA</text>
+<path d="M130 125 H186" fill="none" stroke="#7f88a5" stroke-width="2" class="flow"/>
+<rect x="186" y="90" width="110" height="70" rx="12" fill="#151b36" stroke="#0ceace" stroke-width="2"/>
+<text x="241" y="118" fill="#0ceace" font-size="13" font-weight="800" text-anchor="middle">AMPK</text>
+<text x="241" y="140" fill="#a9b1c9" font-size="10.5" font-weight="600" text-anchor="middle">energy switch</text>
+<path d="M296 110 L336 70" fill="none" stroke="#26f9ac" stroke-width="2" class="flowseq"/>
+<path d="M296 125 L336 127" fill="none" stroke="#26f9ac" stroke-width="2" class="flowseq"/>
+<path d="M296 140 L336 184" fill="none" stroke="#26f9ac" stroke-width="2" class="flowseq"/>
+<rect x="336" y="46" width="176" height="48" rx="10" fill="#151b36" stroke="#26f9ac" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="424" y="75" fill="#a9b1c9" font-size="11" font-weight="800" text-anchor="middle">GLUCOSE USE ↑</text>
+<rect x="336" y="103" width="176" height="48" rx="10" fill="#151b36" stroke="#26f9ac" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="424" y="132" fill="#a9b1c9" font-size="11" font-weight="800" text-anchor="middle">FAT BURNING ↑</text>
+<rect x="336" y="160" width="176" height="48" rx="10" fill="#151b36" stroke="#26f9ac" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="424" y="189" fill="#a9b1c9" font-size="11" font-weight="800" text-anchor="middle">STRESS ADAPTATION</text>
+<text x="20" y="228" fill="#7f88a5" font-size="10.5" font-weight="600">AMPK activation by MOTS-C: shown in cells and mice. Metabolic outcomes in humans: proposed, not proven.</text>
+</svg><div class="cap">MOTS-C's lane is <strong>information, not infrastructure</strong>: a mitochondria-derived signal that flips the AMPK energy switch and reprograms fuel use. It is never shown as a physical 'repair molecule' rebuilding mitochondria.</div></div><div class="panel reveal"><h3>Why combine them?</h3>
+<p>The forum pitch is that the two peptides hit <strong>two different intervention points</strong> in the same organelle — signaling plus structure. That's the whole thesis.</p>
+<div class="grid2">
+<div class="card sky"><h3>MOTS-C · the signal</h3><p>Acts on <strong>metabolic signaling</strong> (AMPK): how the cell reads energy status and reprograms fuel use. A message, not a machine part.</p></div>
+<div class="card teal"><h3>SS-31 · the structure</h3><p>Acts on <strong>mitochondrial membranes</strong> (cardiolipin): where the energy machinery physically sits. A scaffold stabilizer, not a message.</p></div>
+</div>
+<div class="limits reveal"><h3>⚠️ Complementary ≠ proven synergy</h3><ul><li><strong>Zero studies</strong> have tested MOTS-C + SS-31 together — in cells, mice, or humans.</li><li>Two sensible mechanisms do not add up to a tested therapy. <strong>1 + 1 might equal 1, 2, or trouble</strong> — nobody has checked.</li></ul></div>
+</div><div class="panel reveal"><h3>What happens when mitochondria struggle?</h3>
+<p>When the power plant degrades, the failure has a <strong>correct order</strong> — and each peptide is aimed at a different step of it.</p>
+<div class="grid2">
+<div class="card sky"><h3>1 · The chain falters</h3><p>Electron transport slows → fewer protons pumped → the <strong>membrane voltage falls</strong>.</p></div>
+<div class="card teal"><h3>2 · ATP dries up</h3><p>ATP synthase has no gradient to run on → <strong>energy shortage</strong> across the cell.</p></div>
+<div class="card org"><h3>3 · Leakage rises</h3><p>Electrons escape early → <strong>oxidative stress (ROS)</strong> → damage to membranes, proteins, DNA.</p></div>
+<div class="card sky"><h3>4 · Metabolism derails</h3><p>Glucose and fat handling worsen → <strong>downstream cell stress</strong>, tissue dysfunction.</p></div>
+</div>
+<div class="kv reveal"><span class="k a">Hypothesized intervention points</span><p><strong>SS-31</strong> is aimed at the membrane (cardiolipin) — the structure side, steps 1–3. <strong>MOTS-C</strong> is aimed at AMPK signaling — the information side, step 4. Both are <strong>proposed</strong> mechanisms; neither is a proven fix, and the pair together is entirely untested.</p></div>
+</div><div class="grid2">
+<div class="card sky reveal"><h3>✅ What the research is actually about</h3><ul><li><strong>MOTS-C:</strong> AMPK signaling and metabolic effects in <strong>mice</strong></li><li><strong>SS-31:</strong> cardiolipin binding, less oxidative leakage, function in <strong>Barth syndrome</strong></li><li>Mechanistic and <strong>biomarker-level</strong> findings</li></ul></div>
+<div class="card teal reveal"><h3>❌ What none of this proves</h3><ul><li>No muscle gain, no instant energy, no fat loss</li><li>No disease reversal, no lifespan extension</li><li>A <strong>biomarker change is not a clinical outcome</strong> — and nobody becomes an athlete from mitochondrial signaling</li></ul></div>
+</div></section>
 <mini-poll slug="stack-mito-mini-ch3"
   data-question="Which half interests you more?"
   data-answers='[["📡", "MOTS-C the signaler"],["🔧", "SS-31 the mechanic"],["🤝", "The pair together"],["📊", "Neither until trials"]]'>
@@ -603,16 +693,27 @@ mini-poll { display: block; }
 <div class="card org reveal"><h3>The combo: nothing</h3><p><strong>Zero trials, zero published animal studies</strong> of MOTS-C + SS-31 together. No interaction data, no synergy data, no safety data for the pairing.</p></div>
 </div>
 <div class="plain reveal"><div class="plabel">Plain English</div><p>Imagine two job candidates: one with <strong>great internship reviews</strong> (MOTS-C, in mice) and one who <strong>held one niche job well but flunked three interviews</strong> (SS-31). Hiring them as a team doesn't merge their references — and nobody has ever seen them work together.</p></div>
-</section>
+<div class="panel reveal"><h3>The evidence ladder</h3>
+<p>Where each compound actually stands — and where the <strong>combination</strong> stands (the bottom rung).</p>
+<div class="ebar reveal"><div class="row"><span class="t">MOTS-C · molecular / biochemical (AMPK activation)</span><span class="v">shown in cells/mice</span></div><div class="track"><div class="fill" style="--w:70%;background:linear-gradient(90deg,#0ceace,#fb7693)"></div></div></div>
+<div class="ebar reveal"><div class="row"><span class="t">MOTS-C · animal metabolic studies</span><span class="v">mice: insulin sensitivity, obesity</span></div><div class="track"><div class="fill" style="--w:60%;background:linear-gradient(90deg,#0ceace,#fb7693)"></div></div></div>
+<div class="ebar reveal"><div class="row"><span class="t">MOTS-C · human efficacy trials</span><span class="v">none published</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div></div>
+<div class="ebar reveal"><div class="row"><span class="t">SS-31 · molecular (cardiolipin binding)</span><span class="v">biochemical + cell data</span></div><div class="track"><div class="fill" style="--w:75%;background:linear-gradient(90deg,#0ceace,#fb7693)"></div></div></div>
+<div class="ebar reveal"><div class="row"><span class="t">SS-31 · animal models</span><span class="v">cardiac / muscle models</span></div><div class="track"><div class="fill" style="--w:60%;background:linear-gradient(90deg,#0ceace,#fb7693)"></div></div></div>
+<div class="ebar reveal"><div class="row"><span class="t">SS-31 · human trials</span><span class="v">narrow: Barth only</span></div><div class="track"><div class="fill" style="--w:35%;background:linear-gradient(90deg,#0ceace,#fb7693)"></div></div><div class="note">Barth syndrome approval is real — but SS-31 <strong>failed</strong> in heart failure, heart attack, and mitochondrial myopathy programs.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">SS-31 · regulatory status</span><span class="v">FDA 2025: Barth only</span></div><div class="track"><div class="fill" style="--w:30%;background:linear-gradient(90deg,#0ceace,#fb7693)"></div></div></div>
+<div class="ebar reveal"><div class="row"><span class="t">The combination · any study together</span><span class="v">zero, in any species</span></div><div class="track"><div class="fill" style="--w:2%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div></div>
+<div class="kv reveal"><span class="k a">Biomarker ≠ outcome</span><p>A change in a mitochondrial biomarker (ROS levels, membrane potential, gene expression) is <strong>not</strong> a demonstrated improvement in a meaningful human clinical outcome. SS-31's clinical history is a warning: real mechanisms, <strong>failed programs</strong>.</p></div>
+</div></section>
 <mini-poll slug="stack-mito-mini-ch4"
   data-question="Zero combo trials — your reaction?"
   data-answers='[["🚫", "Dealbreaker"],["⏳", "Early days"],["📊", "The parts have data"],["⚠️", "That gap worries me"]]'>
 </mini-poll>
 <!-- ============ CHAPTER 5 ============ -->
 <section class="chapter" id="ch5">
-  <span class="eyebrow"><span class="n">05</span>What people say</span>
-  <h2>Reports from the <span class="hl">stackers</span></h2>
-  <p class="lede">The mito stack's reputation was built entirely in <strong>forums and clinic testimonials</strong>. Same rules as ever: stories, not data — with the extra twist that nobody can say which half did anything.</p>
+  <span class="eyebrow"><span class="n">05</span>Community reports</span>
+  <h2>Community <span class="hl">reports</span></h2>
+  <p class="lede">Anecdotes from public <strong>Reddit threads, longevity forums, TikTok, YouTube</strong>, and clinic testimonials. Same rules as ever: stories, not data — with the extra twist that nobody can say which half did anything.</p>
 <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and clinics: not verified, not evidence.</p></div>
 <div class="anec-grid">
 <div class="anec reveal"><div class="anec-head"><h4>The full-stack convert</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“MOTS-C plus SS-31 — best energy I've had in years.” <strong>Caveat:</strong> with two compounds plus lifestyle changes, attribution is impossible — and 'energy' is maximally placebo-prone.</p><div class="caveat"><strong>Caveat:</strong> stack reports inherit every weakness of single-compound anecdotes, doubled.<br><strong>Pattern:</strong> Two variables, zero controls, one enthusiastic narrator.</div></div>
@@ -625,12 +726,108 @@ mini-poll { display: block; }
 <div class="folk-note reveal"><p>The stacker's dilemma: <strong>every story is about two compounds at once, so no story teaches you about either</strong>. The most honest review in the thread is 'I don't know which half did it.'</p></div>
 </section>
 <mini-poll slug="stack-mito-mini-ch5"
-  data-question="Stack stories — how do you read them?"
-  data-answers='[["💬", "Encouraging"],["🧂", "Salt required"],["❓", "Which half worked?"],["⚖️", "Stories aren&#39;t data"]]'>
+  data-question="Which community-report pattern stands out to you?"
+  data-answers='[["💪", "Energy claims"],["❓", "Which half worked?"],["🤐", "Non-responders"],["⚖️", "Stories aren&#39;t data"]]'>
 </mini-poll>
 <!-- ============ CHAPTER 6 ============ -->
 <section class="chapter" id="ch6">
-  <span class="eyebrow"><span class="n">06</span>Combined risks</span>
+  <span class="eyebrow"><span class="n">06</span>The head-to-head</span>
+  <h2>MOTS-C <span class="hl">vs</span> SS-31</h2>
+  <p class="lede">Two research peptides, one organelle, <strong>zero shared trials</strong>. The comparison is the whole point of the stack — and the part with the least evidence.</p>
+<div class="twrap reveal"><table class="trial">
+<tr><th></th><th>MOTS-C · the signal</th><th>SS-31 · the structure</th></tr>
+<tr><td>Origin</td><td>Encoded in <strong>mitochondrial DNA</strong> (12S rRNA region)</td><td><strong>Designed</strong> tetrapeptide (elamipretide)</td></tr>
+<tr><td>Molecular type</td><td>16-amino-acid peptide</td><td>4-amino-acid peptide</td></tr>
+<tr><td>Mitochondrial relationship</td><td><strong>Derived from</strong> mitochondria; signals outward (retrograde)</td><td><strong>Targeted to</strong> mitochondria; binds inner-membrane cardiolipin</td></tr>
+<tr><td>Primary research focus</td><td>Metabolic regulation, cellular stress responses</td><td>Mitochondrial structure, electron transport, oxidative stress</td></tr>
+<tr><td>Proposed mechanism</td><td>AMPK activation → fuel reprogramming</td><td>Cardiolipin binding → membrane stabilization</td></tr>
+<tr><td>Metabolic effects</td><td>Glucose use ↑, fat burning ↑ in <strong>mice</strong></td><td>Improved energy efficiency in <strong>Barth models</strong></td></tr>
+<tr><td>Oxidative-stress findings</td><td>Indirect (via metabolic reprogramming)</td><td>Direct: less leakage at the membrane</td></tr>
+<tr><td>Human evidence</td><td><strong>None published</strong> (correlations only)</td><td>Barth syndrome approval; <strong>failed</strong> in heart failure / MI / myopathy</td></tr>
+<tr><td>Regulatory status</td><td>Not approved anywhere</td><td>FDA 2025: <strong>Barth syndrome only</strong></td></tr>
+</table></div>
+<div class="panel reveal"><h3>How do conventional approaches compare?</h3>
+<p>A third lane, for perspective — because 'mito stack' debates rarely mention it.</p>
+<div class="grid3">
+<div class="card sky reveal"><h3>Exercise</h3><p>The <strong>real</strong> mitochondrial intervention: raises natural MOTS-C, builds mitochondria, improves everything measured — with a <strong>century of safety data</strong>.</p></div>
+<div class="card teal reveal"><h3>CoQ10 &amp; supplements</h3><p>Same membrane neighborhood as SS-31 conceptually — but <strong>modest, inconsistent</strong> human evidence.</p></div>
+<div class="card org reveal"><h3>Approved mitochondrial drugs</h3><p>Exist for <strong>rare diseases only</strong> (like SS-31's own Barth approval) — never for general 'optimization'.</p></div>
+</div>
+<div class="kv reveal"><span class="k g">The rule</span><p>Neither MOTS-C nor SS-31 — nor any conventional approach — is a <strong>proven longevity treatment</strong>. Anyone selling the stack as life extension is selling a story, not a trial.</p></div>
+</div>
+</section>
+<mini-poll slug="stack-mito-mini-ch6"
+  data-question="MOTS-C vs SS-31 — which evidence file looks stronger?"
+  data-answers='[["🐀", "MOTS-C — mouse metabolic data"],["✅", "SS-31 — Barth approval"],["📉", "Both look thin"],["🤷", "Neither convinces me"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 7 ============ -->
+<section class="chapter" id="ch7">
+  <span class="eyebrow"><span class="n">07</span>Potential benefits</span>
+  <h2>What could the stack <span class="hl">offer</span> — and what holds each claim up?</h2>
+  <p class="lede">Every hoped-for benefit of the mito stack is a claim — and a claim is only as strong as the evidence beneath it. This chapter sorts every claim into three lanes: what's <strong>established</strong> for the individual compounds, what's <strong>predicted</strong> for the combination, and what <strong>forums report</strong>. The lanes are not equal. Read them that way.</p>
+<div class="grid3">
+<div class="card teal reveal"><span class="tbadge b1">Lane 1 · Established — individual compounds only</span><h3>What the science already holds up</h3>
+<ul>
+<li><strong>SS-31 improved functional outcomes in Barth syndrome</strong> — the ultra-rare cardiolipin disorder it's FDA-approved for (2025). The one genuine clinical win in this stack.</li>
+<li><strong>SS-31 steadied mitochondrial energetics</strong> and reduced oxidative leakage in the clinical and preclinical Barth models behind that approval.</li>
+<li><strong>MOTS-C improved insulin sensitivity and reduced obesity in mice</strong> — real, replicated preclinical findings. No published human efficacy trials.</li>
+<li><strong>Exercise measurably raises endogenous MOTS-C in humans</strong> — an observed correlation, not a treatment effect.</li>
+<li>The combination itself: <strong>zero established data</strong>. No animal study, no human study, ever.</li>
+</ul></div>
+<div class="card org reveal"><span class="tbadge b2">Lane 2 · Predicted — combination logic, untested</span><h3>What the pairing predicts — never measured</h3>
+<ul>
+<li><strong>Predicted:</strong> AMPK-driven metabolic reprogramming (MOTS-C) plus membrane stabilization (SS-31) could complement each other — cleaner fuel use with less energy leakage. A sensible story, not a finding.</li>
+<li><strong>Predicted:</strong> steadier ATP output and less oxidative damage under cellular stress. Prediction only.</li>
+<li><strong>Emerging:</strong> research on each compound continues — but any "mito stack" effect is still a hypothesis awaiting its first test.</li>
+<li><strong>The explicit caveat:</strong> no animal study, no human study, and no mechanistic paper has ever tested MOTS-C + SS-31 together. Until one runs, every predicted benefit is a guess about a concert that never happened.</li>
+</ul></div>
+<div class="card sky reveal"><span class="tbadge b3">Lane 3 · Forum anecdotes — stories, not data</span><h3>What forums report</h3>
+<ul>
+<li>Recurring paraphrased themes: <strong>"best energy in years,"</strong> better workout recovery, "feeling sharper."</li>
+<li><strong>Attribution is impossible:</strong> two compounds at once, plus lifestyle changes, plus placebo-prone outcomes like "energy."</li>
+<li>Enthusiast forums filter for enthusiasm — quiet non-responders rarely post.</li>
+<li>The full anecdote tiles live in the <strong>Community Reports</strong> chapter, each with its caveat.</li>
+</ul></div>
+</div>
+<div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Lane 3 only</strong> — the pulsing dot marks unverified anecdote: recurring forum themes, not verified, not evidence. Lanes 1 and 2 carry no dots.</p></div>
+<div class="plain reveal"><div class="plabel">Plain English</div><p>Think of it as a courtroom: <strong>Lane 1 has witnesses</strong> (Barth trials, mouse studies), <strong>Lane 2 has a theory of the case</strong> (the pairing logic), and <strong>Lane 3 has hearsay</strong> (forum stories). A good lawyer uses all three — but only one of them counts as evidence.</p></div>
+</section>
+<mini-poll slug="stack-mito-mini-benefits"
+  data-question="Which evidence lane do you weigh most?"
+  data-answers='[["🧪", "Established data"],["🔮", "Predicted combo logic"],["💬", "Forum stories"],["⚖️", "The honest caveats"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 8 ============ -->
+<section class="chapter" id="ch8">
+  <span class="eyebrow"><span class="n">08</span>Who it's for — and not for</span>
+  <h2>Who might this <span class="hl">be relevant to</span>?</h2>
+  <p class="lede">Not everyone reading about the mito stack is reading for the same reason — and as a protocol, this stack suits almost no one. This is general information, not personal medical advice.</p>
+<div class="grid2">
+<div class="card teal reveal"><h3>May be relevant to</h3>
+<ul>
+<li><strong>Students of mitochondrial biology</strong> who want an honest map of what each compound has actually shown.</li>
+<li><strong>Longevity-science readers</strong> learning to separate trial data from marketing.</li>
+<li><strong>Clinicians and researchers</strong> tracking which combinations have real data — this one has none, and that's a finding too.</li>
+<li><strong>Barth syndrome patients and families</strong> — SS-31's one established indication — via their own clinician, never via a stack protocol.</li>
+</ul></div>
+<div class="card org reveal"><h3>May not suit — extra caution</h3>
+<ul>
+<li><strong>Tested athletes:</strong> MOTS-C is WADA-banned (S4.4 metabolic modulators) at all times.</li>
+<li><strong>Anyone expecting proven benefits</strong> from the combination — none exist in any species.</li>
+<li><strong>People seeking treatment</strong> for a medical condition: this stack is not a treatment for anything.</li>
+<li><strong>People who are pregnant or breastfeeding,</strong> or managing serious illness: no safety data exists at all.</li>
+<li><strong>Anyone looking here for dosing, sourcing, or a protocol:</strong> this page has none — and those decisions belong with a clinician.</li>
+</ul></div>
+</div>
+<div class="kv reveal"><span class="k g">The one established indication</span><p>SS-31 for <strong>Barth syndrome</strong> — an ultra-rare disease, via prescription — is the single established medical use in this entire picture. Everything else here is general information about research compounds, not guidance for any person.</p></div>
+<div class="plain reveal"><div class="plabel">Plain English</div><p>This page is a <strong>map, not a menu</strong>. It suits people studying the terrain; it doesn't suit anyone looking to order from it. If you're weighing anything for your own health, that conversation happens with a clinician who knows you — not with an infographic.</p></div>
+</section>
+<mini-poll slug="stack-mito-mini-fit"
+  data-question="Who were you reading this for?"
+  data-answers='[["🔬", "Research curiosity"],["📖", "Separating hype from data"],["🩺", "A health question"],["🏋️", "Athletic edge"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 9 ============ -->
+<section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">09</span>Combined risks</span>
   <h2>Risks <span class="hl">× 2</span></h2>
   <p class="lede">Stacking doesn't just add hoped-for benefits — it <strong>multiplies the unknowns</strong>. Here's the combined risk picture, kept in honest boxes.</p>
 <div class="safety-grid">
@@ -643,39 +840,39 @@ mini-poll { display: block; }
 </div>
 <div class="plain reveal"><div class="plabel">Plain English</div><p>One experimental peptide is a <strong>question mark</strong>. Two is a <strong>question mark squared</strong> — unknown effects, unknown interactions, unknown quality, twice over. The stack's risk file isn't the sum of two small files; it's a bigger, emptier one.</p></div>
 </section>
-<mini-poll slug="stack-mito-mini-ch6"
+<mini-poll slug="stack-mito-mini-ch9"
   data-question="Which combo unknown bothers you most?"
   data-answers='[["🔬", "Interactions"],["📏", "Folklore dosing"],["🏭", "Double quality risk"],["❓", "All of it"]]'>
 </mini-poll>
-<!-- ============ CHAPTER 7 ============ -->
-<section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Glossary</span>
-  <h2>Speak <span class="hl">mito-stack</span></h2>
-  <p class="lede">Twelve terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
+<!-- ============ CHAPTER 10 ============ -->
+<section class="chapter" id="ch10">
+  <span class="eyebrow"><span class="n">10</span>Understanding mito-stack Terminology</span>
+  <h2>Understanding <span class="hl">mito-stack</span> Terminology</h2>
+  <p class="lede">Twelve terms, each with a scientific definition and a plain-English translation. Tap any term to expand it.</p>
 <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDBA7422"/><path d="M24 6v30M14 12l20 24M34 12L14 36" fill="none" stroke="#FDBA74" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">MOTS-C</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Mitochondrial open reading frame of the 12S rRNA-c: a 16-amino-acid peptide encoded in mitochondrial DNA that activates AMPK and regulates metabolism.</p><p class="gex"><span class="gslabel">Example</span>The signaler half of the stack.</p><div class="plain"><span class="plabel">Plain English</span>A text message from your power plants about energy strategy.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#EA580C22"/><circle cx="24" cy="24" r="14" fill="none" stroke="#EA580C" stroke-width="2.5"/><circle cx="24" cy="24" r="5" fill="#EA580C"/></svg><span class="term">SS-31</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Elamipretide: a 4-amino-acid mitochondria-targeted peptide binding cardiolipin; FDA-approved 2025 for Barth syndrome.</p><p class="gex"><span class="gslabel">Example</span>The mechanic half of the stack.</p><div class="plain"><span class="plabel">Plain English</span>The on-site engineer steadying the power plant's walls.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7C2D1222"/><path d="M12 36l8-18 6 10 4-6 6 14z" fill="none" stroke="#7C2D12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">AMPK</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>AMP-activated protein kinase: the cell's energy sensor. When energy runs low, AMPK switches metabolism toward burning fuel and making more mitochondria.</p><p class="gex"><span class="gslabel">Example</span>The master switch MOTS-C flips.</p><div class="plain"><span class="plabel">Plain English</span>The cell's low-battery mode trigger.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDBA7422"/><path d="M10 24h8l3-8 4 16 3-8h10" fill="none" stroke="#FDBA74" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Cardiolipin</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The signature fat of the inner mitochondrial membrane anchoring the energy machinery; SS-31's binding target.</p><p class="gex"><span class="gslabel">Example</span>The parking spot for the mechanic.</p><div class="plain"><span class="plabel">Plain English</span>The special fat holding the generators in place.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#EA580C22"/><path d="M14 8h20v10l-5 5v13a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V23l-5-5z" fill="none" stroke="#EA580C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Synergy</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>When a combination does more than the sum of its parts. Claimed constantly for stacks, demonstrated almost never.</p><p class="gex"><span class="gslabel">Example</span>The stack's favorite word — and its least supported one.</p><div class="plain"><span class="plabel">Plain English</span>1+1=3 — claimed a lot, proven rarely.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7C2D1222"/><path d="M24 8c7 0 12 5 12 12 0 9-12 20-12 20S12 29 12 20c0-7 5-12 12-12z" fill="none" stroke="#7C2D12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Preclinical</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Research before human trials: cells and animals. All of MOTS-C's efficacy data lives here.</p><p class="gex"><span class="gslabel">Example</span>Where the entire MOTS-C file sits.</p><div class="plain"><span class="plabel">Plain English</span>Lab and animal studies — not human proof.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDBA7422"/><path d="M8 16h32M8 24h32M8 32h20" fill="none" stroke="#FDBA74" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">WADA S4.4</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The WADA Prohibited List section covering metabolic modulators including AMPK activators — where MOTS-C sits, banned at all times.</p><p class="gex"><span class="gslabel">Example</span>Why tested athletes can't touch half this stack.</p><div class="plain"><span class="plabel">Plain English</span>Sports' banned list entry for metabolic tinkerers.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#EA580C22"/><path d="M18 10h12v28H18zM18 18h12M18 26h12" fill="none" stroke="#EA580C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">12S rRNA</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A mitochondrial gene region that — surprisingly — also encodes the MOTS-C peptide. Mitochondrial DNA moonlighting as a peptide factory.</p><p class="gex"><span class="gslabel">Example</span>Where MOTS-C's recipe is hidden.</p><div class="plain"><span class="plabel">Plain English</span>A gene better known for something else, hiding a peptide recipe.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7C2D1222"/><path d="M24 6l14 8v16l-14 8-14-8V14z" fill="none" stroke="#7C2D12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="22" r="3.5" fill="#7C2D12"/></svg><span class="term">Retrograde signaling</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Communication from mitochondria back to the nucleus — the power plant texting headquarters, as MOTS-C does under stress.</p><p class="gex"><span class="gslabel">Example</span>MOTS-C's commute: mitochondria to nucleus.</p><div class="plain"><span class="plabel">Plain English</span>The basement generator sending memos upstairs.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDBA7422"/><path d="M10 30c3-9 8-14 14-14s11 5 14 14M24 16v18" fill="none" stroke="#FDBA74" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Barth syndrome</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Ultra-rare genetic disorder of cardiolipin metabolism; SS-31's single approved indication.</p><p class="gex"><span class="gslabel">Example</span>The one disease where half the stack is proven.</p><div class="plain"><span class="plabel">Plain English</span>The rare condition that earned SS-31 its approval.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#EA580C22"/><circle cx="17" cy="17" r="7" fill="none" stroke="#EA580C" stroke-width="2.5"/><path d="M22 22l12 12" stroke="#EA580C" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Off-label</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Using an approved drug outside its approved indication. Most SS-31 'stack' use is off-label or gray-market, not studied.</p><p class="gex"><span class="gslabel">Example</span>What stack use of SS-31 actually is.</p><div class="plain"><span class="plabel">Plain English</span>Using a drug for a job it wasn't approved for.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7C2D1222"/><path d="M24 8v32M12 14l24 20M36 14L12 34" fill="none" stroke="#7C2D12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Confounding</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>When multiple changes happen at once, so no single cause can be credited. The permanent condition of stack anecdotes.</p><p class="gex"><span class="gslabel">Example</span>Why stack stories prove nothing about either half.</p><div class="plain"><span class="plabel">Plain English</span>Too many variables to blame — or credit — any one thing.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDBA7422"/><path d="M24 6v30M14 12l20 24M34 12L14 36" fill="none" stroke="#fb7693" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">MOTS-C</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>MOTS-C — mitochondrial open reading frame of the 12S rRNA-c — is a 16-amino-acid peptide encoded in mitochondrial DNA, an unusual case of the mitochondrial genome moonlighting as a peptide factory. It activates AMPK, the cell's master energy sensor, shifting metabolism toward fuel-burning and mitochondrial biogenesis. In mice it has shown resistance to diet-induced obesity and improved metabolic health. All of its efficacy data remain preclinical; no human trials have demonstrated benefit.</p><div class="plain"><span class="plabel">Plain English</span>MOTS-C is a 16-link peptide whose recipe is hidden inside your mitochondria's own DNA — the power plant moonlighting as a peptide factory. Under metabolic stress it travels to the nucleus and flips on AMPK, the cell's low-battery switch, pushing the body toward burning fuel. In mice, the metabolic effects were genuinely impressive. But every scrap of that evidence comes from animals — not a single human trial has shown it works in people.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#EA580C22"/><circle cx="24" cy="24" r="14" fill="none" stroke="#0ceace" stroke-width="2.5"/><circle cx="24" cy="24" r="5" fill="#0ceace"/></svg><span class="term">SS-31</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>SS-31, also known as elamipretide, is a synthetic tetrapeptide designed to concentrate in mitochondria. It binds cardiolipin, the signature lipid of the inner mitochondrial membrane, where it is proposed to stabilize the electron transport chain and support energy production. Unlike MOTS-C, it has human clinical data: it received FDA accelerated approval in 2025 for Barth syndrome, an ultra-rare genetic disorder of cardiolipin metabolism. That approval covers Barth syndrome only — not energy, aging, or athletic performance.</p><div class="plain"><span class="plabel">Plain English</span>SS-31, also called elamipretide, is a tiny four-part peptide engineered to home in on mitochondria. It latches onto cardiolipin — a special fat in the mitochondria's inner wall — and is thought to steady the machinery that makes cellular energy. Here is what sets it apart from MOTS-C: it has real human data. In 2025 the FDA approved it for Barth syndrome, an ultra-rare genetic disease of that same mitochondrial fat. But the approval is for Barth syndrome only — not for energy boosts, anti-aging, or workouts.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7C2D1222"/><path d="M12 36l8-18 6 10 4-6 6 14z" fill="none" stroke="#127c6f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">AMPK</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>AMP-activated protein kinase is the cell's master energy sensor, a heterotrimeric enzyme that monitors the ratio of AMP to ATP. When energy runs low, AMPK activates catabolic pathways that generate fuel and triggers the creation of new mitochondria, while switching off energy-expensive growth. Exercise, fasting, and metformin all converge on this switch. MOTS-C is the signaler half of this stack precisely because its proposed pathway runs through AMPK.</p><div class="plain"><span class="plabel">Plain English</span>AMPK is the cell's low-battery mode — a protein switch that notices when energy is running out and reorganizes the cell around making more of it. It tells the cell to burn fuel, build new mitochondria, and stop spending energy on growth. Exercise flips it on, fasting flips it on, and metformin works partly through it. MOTS-C is the ‘signaler’ of this stack because its whole pitch is flipping this same master switch.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDBA7422"/><path d="M10 24h8l3-8 4 16 3-8h10" fill="none" stroke="#fb7693" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Cardiolipin</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Cardiolipin is a distinctive phospholipid found almost exclusively in the inner mitochondrial membrane, where it makes up roughly a fifth of the lipid content. It anchors the protein complexes of the electron transport chain, holding the energy-generating machinery in its correct shape. Defective cardiolipin remodeling causes Barth syndrome. It is also the specific binding target of SS-31, which is proposed to stabilize it under stress.</p><div class="plain"><span class="plabel">Plain English</span>Cardiolipin is a special fat found almost nowhere in the body except the inner wall of your mitochondria — about a fifth of that wall is made of it. Its job is to hold the energy-generating machinery in place, like brackets holding an engine together. When the body cannot maintain it properly, you get Barth syndrome. SS-31 is the ‘mechanic’ of this stack because it binds directly to this fat, theoretically steadying the whole structure.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#EA580C22"/><path d="M14 8h20v10l-5 5v13a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V23l-5-5z" fill="none" stroke="#0ceace" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Synergy</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>In pharmacology, synergy means a combination produces an effect greater than the sum of its individual parts — 1 + 1 = 3. It is a precise claim that requires controlled testing of each component alone and together. Supplement marketing invokes synergy constantly while almost never demonstrating it. For MOTS-C plus SS-31, no synergy data exist: the combination has not been tested in any species, and no safety data for the pairing exist either.</p><div class="plain"><span class="plabel">Plain English</span>Synergy is the claim that two things together do more than the sum of their parts — 1 + 1 = 3. It is the supplement industry's favorite word and its least supported one. Proving real synergy means testing each ingredient alone and then together, which almost nobody does. For this particular pair, there is no synergy data at all — the combination has never been tested in any species, and nobody has safety data on the pairing either.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7C2D1222"/><path d="M24 8c7 0 12 5 12 12 0 9-12 20-12 20S12 29 12 20c0-7 5-12 12-12z" fill="none" stroke="#127c6f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Preclinical</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Preclinical research is the stage of investigation that comes before human trials: experiments in cell cultures and animal models. It is where mechanisms are discovered and initial safety is assessed. Preclinical success frequently fails to translate to humans, which is why regulators require human trials before approval. All of MOTS-C's efficacy evidence lives at this stage.</p><div class="plain"><span class="plabel">Plain English</span>Preclinical means ‘before human trials’ — cells in dishes and animals in labs. It is a necessary first step: this is where scientists figure out how something might work and whether it is safe enough to test in people. But most things that work in mice fail in humans, which is exactly why human trials exist. The entire case for MOTS-C's benefits sits at this stage — promising in animals, unproven in people.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDBA7422"/><path d="M8 16h32M8 24h32M8 32h20" fill="none" stroke="#fb7693" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">WADA S4.4</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>WADA S4.4 is the section of the World Anti-Doping Agency's Prohibited List covering metabolic modulators. It includes AMPK activators, PPAR-delta agonists, insulins and insulin-mimetics, and related compounds. Substances in this category are prohibited at all times — both in and out of competition. MOTS-C falls under this section as an AMPK-pathway modulator, so tested athletes cannot use it.</p><div class="plain"><span class="plabel">Plain English</span>WADA S4.4 is the chapter of sports' banned-substances list that covers metabolic modulators — drugs that tinker with how the body produces and uses energy. It catches AMPK activators, certain diabetes-related compounds, and similar agents. Everything in this section is banned at all times, not just on competition day. MOTS-C lands here because of its AMPK pathway, which is why tested athletes cannot touch half of this stack.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#EA580C22"/><path d="M18 10h12v28H18zM18 18h12M18 26h12" fill="none" stroke="#0ceace" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">12S rRNA</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>12S rRNA is a mitochondrial gene encoding the small-subunit ribosomal RNA of the mitoribosome — the protein-building machinery inside mitochondria. It is best known for this housekeeping role in mitochondrial protein synthesis. Surprisingly, the same gene region also harbors a short open reading frame that encodes the MOTS-C peptide. This dual use — a structural RNA gene moonlighting as a peptide factory — is what makes MOTS-C's origin remarkable.</p><div class="plain"><span class="plabel">Plain English</span>12S rRNA is a piece of mitochondrial DNA best known for a boring but vital job: building the tiny ribosomes that mitochondria use to make their own proteins. The surprise is that the same stretch of code also hides a short recipe for MOTS-C, a completely separate peptide. One gene region, two jobs — that is unusual and it is the reason MOTS-C's discovery made waves. The power plant's instruction manual had a secret second chapter.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7C2D1222"/><path d="M24 6l14 8v16l-14 8-14-8V14z" fill="none" stroke="#127c6f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="22" r="3.5" fill="#127c6f"/></svg><span class="term">Retrograde signaling</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Retrograde signaling is communication that flows from mitochondria back to the nucleus — the reverse of the usual direction, in which the nucleus directs mitochondrial activity. Through this channel, mitochondria report their metabolic state and stress levels, prompting the nucleus to adjust gene expression. MOTS-C is proposed to act as one such messenger, traveling from mitochondria to the nucleus under metabolic stress to activate protective programs.</p><div class="plain"><span class="plabel">Plain English</span>Most of the time, the nucleus bosses the mitochondria around — that is the normal direction of orders. Retrograde signaling is the reverse: the mitochondria sending memos back upstairs, reporting on their energy status and stress. MOTS-C is proposed to be one of those memos — released under metabolic stress, traveling to the nucleus, and switching on protective genetic programs. The basement generator texting headquarters.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v1" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDBA7422"/><path d="M10 30c3-9 8-14 14-14s11 5 14 14M24 16v18" fill="none" stroke="#fb7693" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Barth syndrome</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Barth syndrome is an ultra-rare X-linked genetic disorder caused by mutations in the TAFAZZIN gene, which impair cardiolipin remodeling in mitochondria. It produces cardiomyopathy, skeletal muscle weakness, growth delay, and neutropenia, and it affects primarily males. There are very few treatment options. In 2025, SS-31 (elamipretide) received FDA accelerated approval for Barth syndrome — its single approved indication and the only disease in which this stack's other half is proven.</p><div class="plain"><span class="plabel">Plain English</span>Barth syndrome is an ultra-rare genetic disorder — a faulty TAFAZZIN gene means the body cannot maintain cardiolipin, the special mitochondrial fat. The result is a weakened heart, weak muscles, stunted growth, and immune problems, mostly in boys. Treatment options have been almost nonexistent. In 2025, SS-31 became the first drug approved for it — which is also the only disease where half of this stack has proven benefit. Everything else people stack it for is uncharted.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#EA580C22"/><circle cx="17" cy="17" r="7" fill="none" stroke="#0ceace" stroke-width="2.5"/><path d="M22 22l12 12" stroke="#0ceace" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Off-label</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Off-label use means prescribing or taking an approved drug for a purpose outside its officially approved indication. Physicians may do this legally, but the use has not been evaluated by regulators for that purpose. Most SS-31 ‘stack’ use — for energy, longevity, or performance — is off-label at best, and gray-market at worst, since it has never been studied for those purposes. Approval for Barth syndrome says nothing about these other uses.</p><div class="plain"><span class="plabel">Plain English</span>Off-label means using an approved drug for a job it was never approved for. Doctors can do it, but regulators never evaluated the drug for that purpose — the safety and efficacy data do not transfer. Nearly all SS-31 ‘stack’ use falls here: energy, longevity, performance — none of it studied, and much of it bought gray-market rather than prescribed. The Barth syndrome approval is real, but it says nothing about any of these other uses.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7C2D1222"/><path d="M24 8v32M12 14l24 20M36 14L12 34" fill="none" stroke="#127c6f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Confounding</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Confounding occurs when multiple variables change at once, making it impossible to credit any single one with an observed effect. In stack anecdotes, people typically change diet, training, sleep, supplements, and two peptides simultaneously. No single factor can be isolated from the rest. This is the permanent condition of stack testimonials — and why they cannot establish what either component did.</p><div class="plain"><span class="plabel">Plain English</span>Confounding is what happens when too many things change at once and you cannot tell which one did anything. Stack stories are confounding machines: new diet, new training, better sleep, five supplements, and two peptides all start the same week — then everything gets credited to the peptides. It is not that the stories are lies; it is that the setup makes the truth unknowable. That is why anecdotes about stacks prove nothing about either half.</div></div></div>
 </div>
 </section>
-<mini-poll slug="stack-mito-mini-ch7"
+<mini-poll slug="stack-mito-mini-ch10"
   data-question="Which term was newest to you?"
   data-answers='[["⚡", "AMPK"],["🧬", "Cardiolipin"],["📡", "Retrograde signaling"],["➕", "Synergy"]]'>
 </mini-poll>
-<!-- ============ CHAPTER 8 ============ -->
-<section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Takeaways</span>
+<!-- ============ CHAPTER 11 ============ -->
+<section class="chapter" id="ch11">
+  <span class="eyebrow"><span class="n">11</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Eight chapters, distilled. A forum-born pairing with a sensible story and an empty evidence file.</p>
+  <p class="lede">Eleven chapters, distilled. A forum-born pairing with a sensible story and an empty evidence file.</p>
 <div class="take-grid">
 <div class="take reveal"><div class="tk">🔧</div><h4>Two jobs, one organelle</h4><p>MOTS-C <strong>signals metabolism</strong> (AMPK); SS-31 <strong>steadies membranes</strong> (cardiolipin).</p></div>
 <div class="take reveal"><div class="tk">🧠</div><h4>The logic is forum logic</h4><p>Non-overlapping mechanisms → assumed complementary. <strong>No trial</strong> ever confirmed it.</p></div>
@@ -690,7 +887,8 @@ mini-poll { display: block; }
 </div>
 <div class="limits reveal"><h3>What this page does not do</h3><ul><li><strong>No dosing or administration guidance.</strong> This page contains no instructions for obtaining, preparing, or using these peptides.</li><li><strong>No sourcing information.</strong> This page does not help find, evaluate, or buy peptides from any channel.</li><li><strong>Can't replace your clinician.</strong> Metabolic health decisions need a licensed clinician who knows you — this page isn't one.</li></ul></div>
 </section>
-<mini-poll slug="stack-mito-mini-ch8"
+<h2 class="rate-h reveal">⭐ How would you rate this <span class="hl">infographic</span>?</h2>
+<mini-poll slug="stack-mito-mini-ch11"
   data-question="How would you rate this infographic?"
   data-answers='[["😍", "Loved it — five stars"],["🙂", "Good stuff — four stars"],["😐", "It&#39;s okay — three stars"]]'>
 </mini-poll>
@@ -714,6 +912,8 @@ mini-poll { display: block; }
 (function(){
 "use strict";
 var reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+/* ---------- SMIL pause under reduced motion ---------- */
+if(reduced){try{document.querySelectorAll("svg").forEach(function(s){s.pauseAnimations();});}catch(e){}}
 /* ---------- theme ---------- */
 function setTheme(t){
   document.documentElement.setAttribute("data-theme",t);
@@ -734,7 +934,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#FDBA74","#EA580C","#FDBA74","#7C2D12","#EA580C","#FDBA74"];
+  var colors=["#fb7693","#0ceace","#fb7693","#127c6f","#0ceace","#fb7693"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -841,7 +1041,7 @@ var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9","ch10","ch11"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -884,7 +1084,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#FDBA74","#EA580C","#7C2D12","#fbbf24","#edf0f9"],parts=[];
+  var cols=["#fb7693","#0ceace","#127c6f","#26f9ac","#edf0f9"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -920,7 +1120,7 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#FDBA74", "#EA580C", "#7C2D12", "#f08a54", "#983907", "#fbbf24", "#f472b6", "#22d3ee"] };
+  accents: ["#fb7693", "#0ceace", "#127c6f", "#54f0dc", "#079886", "#26f9ac", "#f4728f", "#22d3ee", "#a78bfa"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies. See component docs for usage. */
@@ -991,8 +1191,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#fdba74', '#a3e635', '#fb923c', '#a78bfa', '#f472b6',
-                 '#a3e635', '#fbbf24', '#fb7185', '#22d3ee'];
+                ['#fb7693', '#a3e635', '#fa3d66', '#a78bfa', '#f4728f',
+                 '#a3e635', '#26f9ac', '#fb718f', '#22d3ee'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
